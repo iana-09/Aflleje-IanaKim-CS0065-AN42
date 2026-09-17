@@ -1,0 +1,4 @@
+.savedWith/ 
+.metadata/ 
+*.tmp 
+*.log 
