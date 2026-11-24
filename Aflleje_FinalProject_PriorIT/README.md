@@ -2,6 +2,13 @@
 
 **A Rule-Based Expert System for IT Support Ticket Prioritization and Decision Support**
 
+## Download the submission ZIP
+
+1. Open [PriorIT-Final.zip](PriorIT-Final.zip) on GitHub.
+2. Click **Download raw file** (the download icon above the file preview). You can also use the [direct ZIP download](https://github.com/iana-09/Aflleje-IanaKim-CS0065-AN42/raw/refs/heads/main/Aflleje_FinalProject_PriorIT/PriorIT-Final.zip).
+3. Extract the downloaded ZIP and open **GUIDE.txt** for the app and KNIME instructions.
+
+
 ## Introduction and problem statement
 
 IT support teams receive requests that vary in urgency, scope, and age. Manual triage can produce inconsistent classifications and leave urgent issues waiting. PriorIT applies explicit policies to classify support requests and explain the recommended response.
