@@ -1,0 +1,33 @@
+const rows = [
+  ['Office-wide network outage', 'Network', 'Critical', 64, 2, 'Open', 'The Cedar Operations floor lost wired and wireless access.'],
+  ['Printer paper feed jam', 'Hardware', 'Low', 2, 3, 'Open', 'The label printer in Birch Admin stops after the first sheet.'],
+  ['Forgotten password', 'Account Access', 'Low', 1, 1, 'Resolved', 'A new staff member needed help recovering access to their workstation.'],
+  ['Suspicious login attempts', 'Security', 'Moderate', 1, 2, 'Open', 'A Maple Finance user received sign-in alerts from unfamiliar devices.'],
+  ['Slow computer performance', 'Hardware', 'Low', 1, 9, 'In Progress', 'A desk computer takes several minutes to open standard applications.'],
+  ['Email synchronization failure', 'Software', 'Moderate', 8, 4, 'In Progress', 'Messages are visible in webmail but missing from desktop clients.'],
+  ['Software installation blocked', 'Software', 'Low', 1, 5, 'Open', 'A user cannot install the approved document viewer.'],
+  ['Malware warning', 'Security', 'Critical', 1, 1, 'In Progress', 'Endpoint protection flagged a suspicious file opened from a shared folder.'],
+  ['Inventory application crash', 'Software', 'Moderate', 11, 8, 'Open', 'Inventory users see the application close when submitting new items.'],
+  ['Employee account access issue', 'Account Access', 'Low', 1, 24, 'Open', 'A staff member still cannot access the internal training portal.'],
+  ['Shared drive intermittently unavailable', 'Network', 'Low', 20, 3, 'Open', 'The Harbor Logistics team loses access to shared files intermittently.'],
+  ['Conference room display flickers', 'Hardware', 'Low', 5, 2, 'Open', 'The main display flickers when connected to a laptop.'],
+  ['Time tracking form fails to load', 'Software', 'Moderate', 3, 25, 'In Progress', 'The form remains on a loading screen after sign-in.'],
+  ['USB headset stops connecting', 'Hardware', 'Low', 1, 30, 'Resolved', 'Replacing the damaged adapter restored microphone access.'],
+  ['VPN client disconnects', 'Network', 'Moderate', 2, 7, 'Resolved', 'Updating the client restored stable connections for remote staff.'],
+  ['External display undetected', 'Hardware', 'Low', 1, 6, 'Resolved', 'Reseating the display cable restored the second monitor.'],
+  ['Staff Wi-Fi slowdown', 'Network', 'Low', 19, 2, 'In Progress', 'Uploads are slow from the Willow Studio meeting area.'],
+  ['Missing calendar permissions', 'Account Access', 'Low', 4, 8, 'Open', 'Four staff members cannot open a shared team calendar.'],
+  ['Phishing email reported', 'Security', 'Moderate', 3, 26, 'In Progress', 'Several users reported a message impersonating the payroll team.'],
+  ['Onboarding checklist update', 'Other', 'Low', 0, 2, 'Open', 'The team asked IT to refresh workstation setup instructions.'],
+  ['Stockroom scanner offline', 'Hardware', 'Moderate', 6, 4, 'Resolved', 'A replacement cradle restored scanner connectivity.'],
+  ['Internet gateway recovered', 'Network', 'Critical', 38, 5, 'Resolved', 'The network team restored internet connectivity by replacing a faulty gateway.'],
+  ['Shared inbox access request', 'Account Access', 'Low', 2, 7.5, 'Open', 'Two staff members requested access to the Willow Studio inbox.'],
+  ['PDF export formatting error', 'Software', 'Low', 5, 27, 'Resolved', 'An application update corrected the export layout.'],
+  ['Desk phone directory update', 'Other', 'Low', 1, 23, 'In Progress', 'An extension in the Birch Admin directory points to the wrong desk.'],
+]
+
+export const sampleTickets = rows.map(([title, category, severity, affectedUsers, waitingHours, status, description], index) => ({
+  id: 'IT-' + String(1025 - index),
+  title, category, severity, affectedUsers, waitingHours, status, description,
+  createdAt: new Date(Date.UTC(2026, 10, 22, 23 - index)).toISOString(),
+}))
